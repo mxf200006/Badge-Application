@@ -1,0 +1,11 @@
+12345	Employee	Active	New 
+12345	Employee	Active	Deactived 
+12345	Contractor	Missing	Activated 
+12345	Employee	Missing	New 
+12345	Visitor	Active	Missing 
+1455124	Contractor	In	Use 
+562234	Visitor	Returned	Use 
+456323	IT	Deactive	
+125499999999	WAREHOUSE	In	Use 
+9875465	Contractor	On	Hand 
+123465	Employee	Active	

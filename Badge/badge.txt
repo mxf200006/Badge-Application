@@ -1,0 +1,5 @@
+12345	Employee	Active	New
+12345	Employee	Active	Deactived
+12345	Contractor	Active	Activated
+12345	Employee	Active	New
+12345	Visitor	Active	Missing

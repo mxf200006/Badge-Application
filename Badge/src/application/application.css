@@ -1,0 +1,231 @@
+.stage{
+	-fx-background-color:transparent;
+	-fx-background-raduis:15px;
+	-fx-border-color:red;
+	-fx-border-width:2 2 2 2;
+	
+}
+#anchor{
+	-fx-background-image:url("/icons/sim.jpg");
+	-fx-background-size:125% 125%;
+
+}
+.button{
+	-fx-border-color:#665000;
+	-fx-background-color:#1f1f1f;
+	-fx-text-fill:#fcc603;
+    -fx-background-radius: 0;
+    -fx-border-radius:0px;
+    -fx-faint-focus-color: transparent;
+}
+
+.button:hover{
+	-fx-background-color:#2e2e2e;
+	-fx-text-fill:yellow;
+	-fx-font-weight:bold;
+	
+	-fx-faint-focus-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-radius:0px;
+}
+
+.text-field{
+	-fx-prompt-text-fill:#665000;
+	-fx-border-color:#665000;
+	-fx-background-color:#1f1f1f;
+	-fx-text-fill:#fcc603;
+    -fx-background-radius: 0;
+    -fx-border-radius:0px;
+}
+.combo-box{
+	-fx-border-color:#665000;
+	-fx-background-color:#1f1f1f;
+	-fx-text-fill:#fcc603;
+    -fx-background-radius: 0;
+    -fx-border-radius:0px;
+}
+.combo-box .list-view{
+	-fx-border-color:#665000;
+	-fx-background-color:#1f1f1f;
+	-fx-text-fill:#fcc603;
+    -fx-background-radius: 0;
+    -fx-border-radius:0px;
+}
+#information{
+	-fx-background-color:transparent;
+	-fx-text-fill:#fcc603;
+}
+.list-view{
+	-fx-border-color:#665000;
+	-fx-background-color:#1f1f1f;
+	-fx-opacity:0.8;
+}
+/*
+ * Design the table it self
+ */
+.table-view {
+    -fx-base: transparent;/*Remove the background column holder */
+    -fx-control-inner-background: transparent;
+    -fx-background-color:transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: red;
+    -fx-padding: 5px;
+}
+
+
+/*
+ * Get rid of column filler
+ */
+.table-view .filler{
+	-fx-background-color: transparent;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color:#665000;
+	-fx-text-fill:#fcc603;
+    -fx-alignment: center
+}
+
+/*
+ * Design the column header for the table
+ */
+.table-view .column-header {
+	-fx-background-color: #1f1f1f;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color:#665000;
+	-fx-text-fill:#fcc603;
+    -fx-alignment: center;
+}
+.table-view .column-header .label{
+	-fx-text-fill:#fcc603;
+}
+.table-view .column-header:hover {
+	-fx-background-color: #2e2e2e;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color:#665000;
+	-fx-text-fill:#fcc603;
+    -fx-alignment: center;
+}
+/*
+ * When dragging a column, the line that appearance 
+ */
+.table-view .column-resize-line{  
+    -fx-text-fill: #fcc603;  
+    -fx-background-color: none;  
+    -fx-fill: none;  
+    -fx-border-color: #665000;  
+    -fx-border-width: 1px;  
+} 
+/*The background color of column while being dragged */
+.table-view .column-drag-header{  
+    -fx-background-color: #665000;  
+    -fx-cursor: h-resize;  
+}
+.table-view .placeholder{  
+	-fx-border-color:#665000;
+    -fx-background-color: #1f1f1f;  
+    -fx-opacity:0.5;    
+}
+
+.table-view .column-header .sort-order{  
+	-fx-background-color:red;
+	-fx-base:red;
+    -fx-text-fill: white;  
+    -fx-fill: white;  
+} 
+
+/*Column header arrow sorter */
+.table-view .column-header .arrow {
+    -fx-background-color: #fcc603;
+}
+
+/** color the scroll bar background and thumb */
+.table-view .scroll-bar {
+    -fx-background-color: none;
+}
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #665000;
+}
+
+/* Each row in the table is a table-row-cell. Inside a table-row-cell is any 
+   number of table-cell. */  
+.table-row-cell {  
+    -fx-background-color: none;     
+    -fx-border-width: 0;        
+}  
+/*
+ * .table-row-cell:filled:odd{  
+    -fx-background-color: #F6F7F8;  
+}  
+* .table-row-cell:filled:even{  
+    -fx-background-color: #261e00; 
+}
+ */
+ 
+/*
+ * Color of row when hover
+ */
+.table-view:row-selection .table-row-cell:filled:hover {  
+    -fx-background-color: #665000;  
+    -fx-fill: yellow; 
+} 
+.table-row-cell:filled:focused {  
+    -fx-background-color: #292929;       
+}
+/*TESTO DELLE CELLE */  
+.table-row-cell .text{    
+    -fx-fill: #fcc603;  
+} 
+.table-row-cell .table-column{  
+    -fx-border-width: 0.0;    
+    -fx-padding: 0.0 0.0 0.0 5.0;     
+}  
+
+
+ .dialog-pane{
+ 	-fx-background-image:url("/application/sim.jpg");
+  	-fx-border-color:none;
+ }
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+  -fx-background-color:transparent;
+}
+
+.dialog-pane > .content.label {
+   -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+   -fx-background-color: transparent;
+   -fx-text-fill:#fcc603;
+   -fx-font-size:16px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+  -fx-background-color: black;
+}
+
+.dialog-pane:header .header-panel .label{
+  -fx-background-color: yellow;
+  -fx-background-radius:10px;
+  -fx-text-fill:black;
+  -fx-font-size:15.0px;
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+   -fx-border-color:#665000;
+	-fx-background-color:#1f1f1f;
+	-fx-text-fill:#fcc603;
+    -fx-background-radius: 0;
+    -fx-border-radius:0px;
+    -fx-faint-focus-color: transparent;
+ }
+
+.dialog-pane .button:hover{     
+  	-fx-background-color:#2e2e2e;
+	-fx-text-fill:yellow;
+	-fx-font-weight:bold;
+	-fx-faint-focus-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-radius:0px; 
+ }
+
